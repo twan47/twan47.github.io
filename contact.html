@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TideWorks</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="responsive.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html"><img class="brand-img" src="images/okgoodfr.png" alt="TideWorks Logo"></a>
+
+      <!-- new added -->
+      <!-- hamburger -->
+      <input type="checkbox" id="navi-toggle" class="checkbox" />
+      <label for="navi-toggle" class="button">
+        <span class="icon">&nbsp;</span>
+      </label>
+      <div class="background">&nbsp;</div>
+
+
+      <div class="nav">
+        <ul id="headernav" class="list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li class="nav-item dropdown">
+            <div onclick="toggle()">
+            <a href="#" class="dropdown-toggle">Services</a></div>
+            <div class="dropdown-menu" id="dropdown-menu">
+              <a href="webdev.html">Web Development</a>
+              <a href="automation.html">Automation</a>
+              <a href="consulting.html">Strategy & Consulting</a>
+              <a href="software.html">Application & Software Engineering</a>
+            </div>
+            <!-- <div class="webdev.html"></div> -->
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="contact-heading">
+        <h1>Contact Us</h1>
+      </div>
+    <div class="container">
+      
+        <form action="send_email.php" method="post" class="contact-full-form">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="business">Business</label>
+            <input type="text" id="business" name="business" required><br>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="service">Service Wanted</label>
+            <select id="service" name="service" required>
+            <option value="">Select a service...</option>
+            <option value="Service 1">Web Development</option>
+            <option value="Service 2">Automation</option>
+            <option value="Service 3">Strategy & Consulting</option>
+            <option value="Service 4">Application & Software Engineering</option>
+            </select><br>
+
+            <label for="description">Description of your question</label>
+            <textarea id="description" name="description" rows="4" cols="50" required></textarea><br>
+
+            <input type="submit" class="submitbtn-cus" value="Submit">
+        </form>
+    </div>
+    <div class="email-footer">
+        <div class="email-container">
+            <p>Or feel free to email us directly at: <a class="contactmail" href="mailto:contact@tideworks.info">contact@tideworks.info</a></p>
+        </div>
+    </div>  
+  </main>
+  <footer>
+    <p>&copy; 2023 TideWorks LLC. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+  <div id="video-container">
+    <video autoplay muted loop id="waves-video">
+        <source src="images/techwave.mp4" type="video/mp4">
+    </video>
+  </div>
+</body>
+</html>

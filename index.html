@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TideWorks</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="responsive.css"> 
+  <script>
+    $(document).ready(function () {
+      $('#scrollDownButton').on('click', function () {
+        $('html, body').animate(
+          {
+            scrollTop: $(window).height(),
+          },
+          1000
+        );
+      });
+    });
+
+
+  </script>
+
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a href="index.html"><img class="brand-img" src="images/okgoodfr.png" alt="TideWorks Logo"></a>
+
+      <!-- new added -->
+      <!-- hamburger -->
+      <input type="checkbox" id="navi-toggle" class="checkbox" />
+      <label for="navi-toggle" class="button">
+        <span class="icon">&nbsp;</span>
+      </label>
+      <div class="background">&nbsp;</div>
+
+
+      <div class="nav">
+        <ul id="headernav" class="list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li class="nav-item dropdown">
+            <div onclick="toggle()">
+            <a href="javascript:void(0)" class="dropdown-toggle">Services</a></div>
+            <div class="dropdown-menu" id="dropdown-menu">
+              <a href="webdev.html">Web Development</a>
+              <a href="automation.html">Automation</a>
+              <a href="consulting.html">Strategy & Consulting</a>
+              <a href="software.html">Application & Software Engineering</a>
+            </div>
+            <!-- <div class="webdev.html"></div> -->
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section id="ad1" class="home-top-sec">
+      <div class="content-box">
+        <h1>You <span class="highlight2">dream</span> it. We'll <span class="highlight">build</span> it.</h1>
+        <p>In a rapidly evolving digital world, keeping up with advancements in technology, design, and software is
+          crucial for success.</p>
+        <p>At TideWorks, we create custom software and web solutions tailored to your unique needs, using cutting-edge
+          code and AI systems for efficient, high-quality results.</p>
+        <p>Stay ahead of the curve with TideWorks. Let's turn your dreams into reality.</p>
+        <div class="scroll-down-btn"></div>
+      </div>
+    </section>
+    <section id="ad2">
+      <div class="content-bar">
+        <h1>Our Services</h1>
+      </div>
+    </section>
+    <section id="services">
+      <div id="service-video-container">
+        <video autoplay muted loop id="waves-video" poster="images/placeholder.jpg">
+          <source src="images/waves4.mp4" type="video/mp4">
+        </video>
+        <div class="services-content">
+          <div class="service-box">
+            <h1><span class="highlight2">Web Development</span></h1>
+            <p>Experience the power of tailor-made websites designed to elevate your online presence. Our team of
+              experts combines cutting-edge coding practices and top-tier website building platforms like WIX, Shopify,
+              and Squarespace to create stunning, user-friendly, and high-performing websites that align with your
+              unique vision and goals.</p>
+            <img src="images/plane2.png" alt="Monitor Clipart" class="service-clipart">
+          </div>
+          <div class="service-box">
+            <h1><span class="highlight2">Application & Software Engineering</span></h1>
+            <p>Unlock the potential of custom applications and features engineered to optimize product delivery and
+              streamline various systems. We're committed to delivering the finest user experiences for both customers
+              and employees, ensuring seamless interactions and enhanced satisfaction.</p>
+            <img src="images/graphs2.png" alt="Cloud Clipart" class="service-clipart">
+          </div>
+          <div class="service-box">
+            <h1><span class="highlight2">Automation</span></h1>
+            <p>Revolutionize your workflow by automating mundane tasks and processes. From emails and billing to
+              transactions, our automation solutions free up valuable time and resources, empowering you to focus on
+              what truly matters. Boost productivity, minimize errors, and discover the unparalleled efficiency that
+              automation can bring to your business.</p>
+            <img src="images/auto2.png" alt="Gears Clipart" class="service-clipart">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="ad3">
+      <div class="content-bar">
+        <h1>Our Pledge as Engineers</h1>
+      </div>
+    </section>
+    <section id="ad4">
+      <div class="content-box">
+        <p>As a professional engineer. I dedicate my professional knowledge and skill to the advancement and betterment
+          of human welfare.</p>
+        <h2><span class="highlight">I PLEDGE</span></h2>
+        <p>To give the utmost of performance to participate in none but honest enterprise.</p>
+        <p>To live and work according to the laws of man and the highest standards of professional conduct.</p>
+        <p>To place service before profit, the honor and standing of the profession before personal advantage, and the
+          public welfare.</p>
+        <h2><span class="highlight">Above All Consideration</span></h2>
+        <p>With humility and the need for divine guidance.</p>
+        <h1><span class="highlight">I make this pledge.</span></h1>
+      </div>
+      <div class="logo-container">
+        <img src="images/goodagain.png" alt="TideWorks Logo">
+      </div>
+    </section>
+    <section id="contact-bar">
+      <div class="contact-bar">
+        <h1>Have a question or need some advice?</h1>
+        <a href="contact.html" class="contact-btn">Contact Us Today</a>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2023 TideWorks LLC. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+  <div id="video-container">
+    <video autoplay muted loop id="waves-video">
+      <source src="images/techwave.mp4" type="video/mp4">
+    </video>
+  </div>
+
+</body>
+
+</html>

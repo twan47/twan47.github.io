@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TideWorks</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="responsive.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html"><img class="brand-img" src="images/okgoodfr.png" alt="TideWorks Logo"></a>
+
+      <!-- new added -->
+      <!-- hamburger -->
+      <input type="checkbox" id="navi-toggle" class="checkbox" />
+      <label for="navi-toggle" class="button">
+        <span class="icon">&nbsp;</span>
+      </label>
+      <div class="background">&nbsp;</div>
+
+
+      <div class="nav">
+        <ul id="headernav" class="list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li class="nav-item dropdown">
+            <div onclick="toggle()">
+            <a href="javascript:void(0)" class="dropdown-toggle">Services</a></div>
+            <div class="dropdown-menu" id="dropdown-menu">
+              <a href="webdev.html">Web Development</a>
+              <a href="automation.html">Automation</a>
+              <a href="consulting.html">Strategy & Consulting</a>
+              <a href="software.html">Application & Software Engineering</a>
+            </div>
+            <!-- <div class="webdev.html"></div> -->
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+      <section id="about-hero">
+        <div class="image-container">
+          <img src="images/basic.jpg" alt="About Image">
+          <img class="img2" src="images/basic2.jpg" alt="About Image">
+        </div>
+        <div class="text-container">
+          <div class="text-box">
+            <h1><span class="highlight2">About the TideWorks Team</span></h1>
+            <p>We are a small but passionate and experienced team of professional software engineers and web developers. We have extensive work and experience in various fields and technologies. <span class="highlight2">We don't just want to build you something; we want to build you something great.</span></p>
+          <div class="logo-container">
+            <img src="images/goodagain.png" alt="TideWorks Logo">
+          </div>
+        </div>
+      </section>
+    <section id="ad2">
+      <div class="content-bar">
+          <h1>Empowering Your Vision with Cutting-Edge Solutions</h1>
+       </div>
+    </section>
+    <section id="about-section">
+      <div class="image-container2">
+        <img src="images/consulting.jpg" alt="Solution">
+      </div>
+      <div class="about-text-box">
+        <div class="about-header">
+          <h1><span class="highlight2">Our Goal</span></h1>
+        </div>
+        <p>Provide innovative solutions tailored to our clients' unique needs, empowering them to thrive in the digital landscape. We believe in the transformative power of technology, and through our collaborative approach, we strive to create cutting-edge products that exceed expectations and drive meaningful change.</p>
+      </div>
+    </section>
+    <section id="about-section">
+      <div class="about-text-box margin-topcus">
+        <div class="about-header">
+          <h1><span class="highlight2">Our Makeup</span></h1>
+        </div>
+        <p>Based in Maine, TideWorks is a compact team of experts specializing in software development, web design, and AI. Our passion and experience drive us to deliver exceptional solutions for our clients.</p>
+      </div>
+      <div class="image-container3">
+        <img src="images/maine.jpg" alt="Solution">
+      </div>
+    </section>
+    <section id="ad3">
+      <div class="content-bar">
+          <h1>Our Pledge as Engineers</h1>
+      </div>
+  </section>
+  <section id="ad4">
+      <div class="content-box">
+          <p>As a professional engineer. I dedicate my professional knowledge and skill to the advancement and betterment of human welfare.</p>
+          <h2><span class="highlight">I PLEDGE</span></h2>
+          <p>To give the utmost of performance to participate in none but honest enterprise.</p>
+          <p>To live and work according to the laws of man and the highest standards of professional conduct.</p>
+          <p>To place service before profit, the honor and standing of the profession before personal advantage, and the public welfare.</p>
+          <h2><span class="highlight">Above All Consideration</span></h2>
+          <p>With humility and the need for divine guidance.</p>
+          <h1><span class="highlight">I make this pledge.</span></h1>
+      </div>
+      <div class="logo-container">
+        <img src="images/goodagain.png" alt="TideWorks Logo">
+      </div>
+  </section>    
+    <section id="contact-bar">
+          <div class="contact-bar">
+              <h1>Have a question or need some advice?</h1>
+              <a href="contact.html" class="contact-btn">Contact Us Today</a>
+          </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2023 TideWorks LLC. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+  <div id="video-container">
+    <video autoplay muted loop id="waves-video">
+        <source src="images/techwave.mp4" type="video/mp4">
+    </video>
+  </div>
+</body>
+</html>

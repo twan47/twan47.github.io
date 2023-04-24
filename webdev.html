@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TideWorks</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="responsive.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html"><img class="brand-img" src="images/okgoodfr.png" alt="TideWorks Logo"></a>
+
+      <!-- new added -->
+      <!-- hamburger -->
+      <input type="checkbox" id="navi-toggle" class="checkbox" />
+      <label for="navi-toggle" class="button">
+        <span class="icon">&nbsp;</span>
+      </label>
+      <div class="background">&nbsp;</div>
+
+
+      <div class="nav">
+        <ul id="headernav" class="list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li class="nav-item dropdown">
+            <div onclick="toggle()">
+            <a href="#" class="dropdown-toggle">Services</a></div>
+            <div class="dropdown-menu" id="dropdown-menu">
+              <a href="webdev.html">Web Development</a>
+              <a href="automation.html">Automation</a>
+              <a href="consulting.html">Strategy & Consulting</a>
+              <a href="software.html">Application & Software Engineering</a>
+            </div>
+            <!-- <div class="webdev.html"></div> -->
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+      <section id="webdesign-hero">
+        <div class="image-container">
+          <img src="images/webdesign.jpg" alt="webdesign">
+          <img class="webdevimg2" src="images/web-design.jpg" alt="webdesign">
+        </div>
+        <div class="text-container">
+          <div class="text-box">
+            <h1><span class="highlight2">Web Design</span> & <span class="highlight">Development</span></h1>
+            <p>At TideWorks, our web development services are designed to cater to your unique budget requirements and vision. Whether you seek a meticulously crafted, custom-coded solution or prefer utilizing cutting-edge website builders for rapid deployment, our team of experts is dedicated to delivering a tailored experience that surpasses expectations and ensures a seamless digital presence.</p>
+          <div class="logo-container">
+            <img src="images/goodagain.png" alt="TideWorks Logo">
+          </div>
+        </div>
+      </section>
+      <section id="ad2">
+        <div class="content-bar">
+            <h1>How We Help</h1>
+        </div>
+    </section>
+    <section id="webdev-section">
+        <div class="webdev-text-box">
+            <div class="webdev-header">
+                <h1><span class="highlight2">Transform Your Online Presence: Boost Traffic & Elevate Your Brand</span></h1>
+            </div>
+            <p>At TideWorks, we craft captivating websites designed to drive traffic and elevate your brand. Our expert team combines innovative design with cutting-edge functionality to deliver engaging online experiences that generate leads and boost business growth. Trust us to create an exceptional online presence that captivates your audience and sets you apart from the competition.</p>
+            <div class="webdev-content">
+                <ul>
+                    <li>Custom-designed websites tailored to your brand</span></li>
+                    <li>Responsive designs optimized for all devices</span></li>
+                    <li>SEO-friendly to drive organic traffic</span></li>
+                    <li>User-friendly interfaces that encourage engagement</span></li>
+                    <li>Analytics integration to measure success</span></li>
+                </ul>
+                <div class="webdev-image-container1">
+                    <img src="images/plane2.png" alt="Solution">
+                </div>
+        </div>
+    </section>
+    <section id="webdev-section">
+        <div class="webdev-text-box">
+            <div class="webdev-header">
+                <h1><span class="highlight2">Our Client & Developer Process</span></h1>
+            </div>
+            <p>We prioritize understanding your unique needs and vision. Our personalized consultation process involves an in-depth discussion to identify the best course of action, tailored to your specific requirements. During the consultation, we provide you with time and price estimates, ensuring full transparency throughout the project. Additionally, our clients benefit from an hourly track of the work we complete, keeping you updated and involved every step of the way. Enjoy constant communication with your dedicated developer, ensuring a seamless experience and a final product that exceeds your expectations.</p>
+            <div class="webdev-image-container1">
+                <img src="images/calctrans.png" alt="Calc">
+            </div>
+        </div>
+    </section>
+    <section id="webdev-section">
+        <div class="webdev-text-box">
+            <div class="webdev-header">
+                <h1><span class="highlight2">Maintenance & Support</span></h1>
+            </div>
+            <p>At TideWorks, we take immense pride in our work and are dedicated to ensuring your complete satisfaction. We offer comprehensive support, maintenance, training, security, and updates at competitive rates to provide you with the best TideWorks experience. Our team is committed to delivering exceptional service, maintaining the performance and reliability of your solutions while continually enhancing their value. Trust TideWorks to stand by you, ensuring the success and longevity of your digital assets.</p>
+            <div class="logo-container">
+                <img src="images/okgoodfr.png" alt="Help">
+            </div>
+        </div>
+    </section>
+    <section id="contact-bar">
+          <div class="contact-bar">
+              <h1>Have a question or need some advice?</h1>
+              <a href="contact.html" class="contact-btn">Contact Us Today</a>
+          </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2023 TideWorks LLC. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+  <div id="video-container">
+    <video autoplay muted loop id="waves-video">
+        <source src="images/techwave.mp4" type="video/mp4">
+    </video>
+  </div>
+</body>
+</html>
